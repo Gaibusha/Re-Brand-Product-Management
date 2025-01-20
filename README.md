@@ -55,33 +55,32 @@ Re-Brand-Product-Management/
 │   ├── icon2.png
 │   └── icon3.png
 └── README.md
+Usage
+Product Management
+Add Product: Click the "Add Product" button in the Products section. Fill in the product details and click "Save".
 
-# Usage
-##Product Management
-### Add Product: Click the "Add Product" button in the Products section. Fill in the product details and click "Save".
+Edit Product: Click the "Edit" button next to a product. Update the product details and click "Save".
 
-### Edit Product: Click the "Edit" button next to a product. Update the product details and click "Save".
+Delete Product: Click the "Delete" button next to a product to remove it from the list.
 
-### Delete Product: Click the "Delete" button next to a product to remove it from the list.
+Brand Management
+Add Brand: Click the "Add Brand" button in the Brands section. Fill in the brand details and click "Save".
 
-# Brand Management
-## Add Brand: Click the "Add Brand" button in the Brands section. Fill in the brand details and click "Save".
+Edit Brand: Click the "Edit" button next to a brand. Update the brand details and click "Save".
 
-## Edit Brand: Click the "Edit" button next to a brand. Update the brand details and click "Save".
+Delete Brand: Click the "Delete" button next to a brand to remove it from the list.
 
-## Delete Brand: Click the "Delete" button next to a brand to remove it from the list.
+Category Management
+Add Category: Click the "Add Category" button in the Categories section. Fill in the category details and click "Save".
 
-# Category Management
-## Add Category: Click the "Add Category" button in the Categories section. Fill in the category details and click "Save".
+Edit Category: Click the "Edit" button next to a category. Update the category details and click "Save".
 
-## Edit Category: Click the "Edit" button next to a category. Update the category details and click "Save".
+Delete Category: Click the "Delete" button next to a category to remove it from the list.
 
-## Delete Category: Click the "Delete" button next to a category to remove it from the list.
-
-# Order Management
+Order Management
 View Orders: Navigate to the Orders section to view all customer orders.
 
-# Deployment
+Deployment
 Deploy your site on GitHub Pages by following these steps:
 
 Create a Repository: Go to GitHub and create a new repository named <your-username>.github.io.
