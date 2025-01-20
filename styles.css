@@ -41,7 +41,7 @@ aside ul {
 }
 
 aside ul li {
-    margin-bottom: 20px; /* Added gap between sidebar items */
+    margin-bottom: 20px;
 }
 
 aside ul li a {
@@ -49,7 +49,6 @@ aside ul li a {
     text-decoration: none;
 }
 
-/* Hover effect for sidebar links */
 aside ul li a:hover {
     background-color: #34495e;
     padding: 10px;
@@ -116,6 +115,18 @@ main {
 .product-list img, .brand-list img {
     width: 50px;
     height: 50px;
+    transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effects for images */
+.product-list img:hover, .brand-list img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    filter: grayscale(0); /* Remove grayscale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.product-list img {
+    filter: grayscale(100%); /* Apply grayscale by default */
 }
 
 .btn {
@@ -140,17 +151,14 @@ main {
     color: white;
 }
 
-/* Hover effect for buttons */
 .btn:hover {
     opacity: 0.8;
 }
 
-/* Hover effect for table rows */
 .product-list tr:hover, .brand-list tr:hover, .category-list tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Sign-up form styles */
 .signup-form {
     background-color: white;
     padding: 20px;
@@ -180,7 +188,6 @@ main {
     color: white;
 }
 
-/* Hover effect for inputs and buttons in sign-up form */
 .signup-form button:hover, .signup-form input:hover {
     opacity: 0.8;
 }
