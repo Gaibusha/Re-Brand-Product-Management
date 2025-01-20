@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopSync Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>ShopSync</h1>
+      <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#">Chat Bot</a>
+        <a href="#" onclick="showSection('contact')">Contact Us</a>
+      </nav>
+    </header>
+    <div class="container">
+      <aside>
+        <ul>
+          <li>
+            <a href="#" onclick="showSection('dashboard')"
+              ><i class="fas fa-tachometer-alt"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('products')"
+              ><i class="fas fa-box"></i> Products</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('brands')"
+              ><i class="fas fa-tags"></i> Brands</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('categories')"
+              ><i class="fas fa-th-list"></i> Categories</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('orders')"
+              ><i class="fas fa-shopping-cart"></i> Orders</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('cart')"
+              ><i class="fas fa-cart-plus"></i> Cart</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('signup')"
+              ><i class="fas fa-user-plus"></i> Sign Up</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showSection('home')"
+              ><i class="fas fa-sign-out-alt"></i> Log Out</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main>
+        <section id="home" class="content-section">
+          <h2>Welcome to ShopSync!</h2>
+          <p>Here are some quick links to get you started:</p>
+          <div class="quick-links">
+            <a href="#" onclick="showSection('products')" class="quick-link"
+              ><i class="fas fa-box"></i> Products</a
+            >
+            <a href="#" onclick="showSection('orders')" class="quick-link"
+              ><i class="fas fa-shopping-cart"></i> Orders</a
+            >
+            <a href="#" onclick="showSection('categories')" class="quick-link"
+              ><i class="fas fa-th-list"></i> Categories</a
+            >
+          </div>
+          <h3>Recent Activity</h3>
+          <ul class="recent-activity">
+            <li>Added new product: Nike Air Max Penny</li>
+            <li>Received order #1234</li>
+          </ul>
+          <h3>Summary Metrics</h3>
+          <div class="metrics">
+            <div class="metric">
+              <h3>Total Sales</h3>
+              <p>$1,200</p>
+            </div>
+            <div class="metric">
+              <h3>Top Product</h3>
+              <p>Nike Air Max</p>
+            </div>
+          </div>
+          <h3>Announcements</h3>
+          <ul class="announcements">
+            <li>New feature release next week!</li>
+            <li>Scheduled maintenance on Saturday.</li>
+          </ul>
+        </section>
+        <section id="contact" class="content-section" style="display: none">
+          <!-- Contact section -->
+          <h2>Contact Us</h2>
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown,
+              USA
+            </p>
+            <p><i class="fas fa-phone-alt"></i> +1 234 567 8900</p>
+            <p><i class="fas fa-envelope"></i> contact@shopsync.com</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <h3>Find Us On</h3>
+          <div class="social-media-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <h3>Business Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+          <h3>Our Location</h3>
+          <div class="map">
+            <!-- Google Maps embed code -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086810532623!2d144.96328851574402!3d-37.81349997975192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b7c7dbec648e!2sFederation+Square!5e0!3m2!1sen!2sau!4v1510919315087"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section id="dashboard" class="content-section">
+          <h2>Dashboard</h2>
+          <div class="metrics">
+            <div class="metric">
+              <h3>Total Products</h3>
+              <p>5</p>
+            </div>
+            <div class="metric">
+              <h3>Total Brands</h3>
+              <p>3</p>
+            </div>
+            <div class="metric">
+              <h3>Total Orders</h3>
+              <p>22</p>
+            </div>
+            <div class="metric">
+              <h3>Total Revenue</h3>
+              <p>$450</p>
+            </div>
+          </div>
+          <div class="chart">
+            <!-- Chart will be rendered here -->
+          </div>
+        </section>
+        <section id="products" class="content-section" style="display: none">
+          <h2>Product List</h2>
+          <button class="btn btn-primary">Add Product</button>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search products"
+            style="margin-top: 10px"
+          />
+          <table class="product-list">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nike Air Force 1 '07 LV8</td>
+                <td>Shoes</td>
+                <td><img src="image1.jpg" alt="Nike Air Force 1 '07 LV8" /></td>
+                <td>220</td>
+                <td>$122.27</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Nike Sportswear Heritage86 Futura Washed</td>
+                <td>T-shirt</td>
+                <td>
+                  <img
+                    src="image2.jpg"
+                    alt="Nike Sportswear Heritage86 Futura Washed"
+                  />
+                </td>
+                <td>999</td>
+                <td>$15.95</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Nike Air Max Penny</td>
+                <td>Shoes</td>
+                <td><img src="image3.jpg" alt="Nike Air Max Penny" /></td>
+                <td>75</td>
+                <td>$182.50</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Nike Windrunner D.Y.E.</td>
+                <td>Jacket</td>
+                <td><img src="image4.jpg" alt="Nike Windrunner D.Y.E." /></td>
+                <td>30</td>
+                <td>$102.43</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Nike Storm-FIT x Stussy</td>
+                <td>Jacket</td>
+                <td><img src="image5.jpg" alt="Nike Storm-FIT x Stussy" /></td>
+                <td>15</td>
+                <td>$400.00</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="brands" class="content-section" style="display: none">
+          <h2>Brand List</h2>
+          <button class="btn btn-primary">Add Brand</button>
+          <table class="brand-list">
+            <thead>
+              <tr>
+                <th>Brand Name</th>
+                <th>Description</th>
+                <th>Icon</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>StrideStyle</td>
+                <td>
+                  StrideStyle merges the art of movement with the finesse of
+                  fashion...
+                </td>
+                <td><img src="icon1.png" alt="StrideStyle Icon" /></td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>VogueVenture</td>
+                <td>
+                  VogueVenture is your gateway to the ultimate fashion
+                  adventure...
+                </td>
+                <td><img src="icon2.png" alt="VogueVenture Icon" /></td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="categories" class="content-section" style="display: none">
+          <h2>Category List</h2>
+          <button class="btn btn-primary">Add Category</button>
+          <table class="category-list">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Shoes</td>
+                <td>Category for all types of shoes</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Clothing</td>
+                <td>Category for all types of clothing</td>
+                <td>
+                  <button class="btn btn-warning">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="signup" class="content-section" style="display: none">
+          <h2>Sign Up</h2>
+          <div class="signup-form">
+            <button class="google-btn">Sign up with Google</button>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button class="signup-btn">Sign Up</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
